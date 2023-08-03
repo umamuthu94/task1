@@ -1,6 +1,8 @@
 package com.example.task1.service;
 
 import java.util.List;
+// import java.util.NoSuchElementException;
+// import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -39,5 +41,16 @@ public Empmanagement updateEmployee(Integer id, Empmanagement updatedEmployee) {
     return null;
 }
 
-    
+// public Empmanagement updateEmpmanagement(Integer id, Empmanagement empmanagement) {
+//         Empmanagement existingEmployee = employeeRepo.findById(id)
+//                 .orElseThrow(() -> new NoSuchElementException("Employee with ID " + id + " not found"));
+
+//         existingEmployee.setName(empmanagement.getName());
+//         // Update other fields as needed
+
+//         return employeeRepo.save(existingEmployee);
+//     }
+
+
+
 }
